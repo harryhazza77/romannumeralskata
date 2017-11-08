@@ -5,17 +5,9 @@ const map = {
 }
 
 module.exports.convert = function(number) {
-    const wholeFives = number/5;
-    const moduloFive = number % 5;
-    console.log({number, wholeFives, moduloFive});
-    if (moduloFive === number) {
-        if (moduloFive === 4) {
-            return "IV";
-        }
-        return "I".repeat(number);
-    }
-    if (moduloFive === 0) {
-        return "V";
-    }
-    return "V" + "I".repeat(moduloFive);
+    if (map[number]) return map[number]; //1,5,10
+    if (map[number+1]) return "I" + map[number+1]; //4,9
+    if (map[number-1]) return  map[number-1] + "I"; //2,6,11
+    if (map[number-2]) return  map[number-2] + "II"; //7,3
+    if (map[number-3]) return  map[number-3] + "III"; //8
 }

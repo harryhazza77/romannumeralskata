@@ -26,10 +26,22 @@ describe("tests", () => {
     it("8", () => {
         chai.expect(subject.convert(8)).to.equal("VIII");
     }); 
-    // it("9", () => {
-    //     chai.expect(subject.convert(9)).to.equal("IX");
-    // }); 
-    // it("10", () => {
-    //     chai.expect(subject.convert(10)).to.equal("X");
-    // });
+    it("9", () => {
+        chai.expect(subject.convert(9)).to.equal("IX");
+    }); 
+    it("10", () => {
+        chai.expect(subject.convert(10)).to.equal("X");
+    });
+    it("11", () => {
+        chai.expect(subject.convert(11)).to.equal("XI");
+    });
+    it("12", () => {
+        chai.expect(subject.convert(12)).to.equal("XII");
+    });
+    it("13", () => {
+        chai.expect(subject.convert(13)).to.equal("XIII");
+    });
+    it("14", () => {
+        chai.expect(subject.convert(13)).to.equal("XIV");
+    });
 });
