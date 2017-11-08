@@ -35,13 +35,49 @@ describe("tests", () => {
     it("11", () => {
         chai.expect(subject.convert(11)).to.equal("XI");
     });
-    it("12", () => {
-        chai.expect(subject.convert(12)).to.equal("XII");
-    });
-    it("13", () => {
-        chai.expect(subject.convert(13)).to.equal("XIII");
-    });
     it("14", () => {
-        chai.expect(subject.convert(13)).to.equal("XIV");
+        chai.expect(subject.convert(14)).to.equal("XIV");
     });
+    it("15", () => {
+        chai.expect(subject.convert(15)).to.equal("XV");
+    });
+    it("16", () => {
+        chai.expect(subject.convert(16)).to.equal("XVI");
+    });
+    it("19", () => {
+        chai.expect(subject.convert(19)).to.equal("XIX");
+    }); 
+    it("20", () => {
+        chai.expect(subject.convert(20)).to.equal("XX");
+    }); 
+    it("21", () => {
+        chai.expect(subject.convert(21)).to.equal("XXI");
+    });     
+    it("24", () => {
+        chai.expect(subject.convert(24)).to.equal("XXIV");
+    }); 
+    it("25", () => {
+        chai.expect(subject.convert(25)).to.equal("XXV");
+    }); 
+    it("26", () => {
+        chai.expect(subject.convert(26)).to.equal("XXVI");
+    }); 
+    it("29", () => {
+        chai.expect(subject.convert(29)).to.equal("XXIX");
+    }); 
+    it("30", () => {
+        chai.expect(subject.convert(30)).to.equal("XXX");
+    }); 
+    it("34", () => {
+        chai.expect(subject.convert(34)).to.equal("XXXIV");
+    }); 
+    it("35", () => {
+        chai.expect(subject.convert(35)).to.equal("XXXV");
+    }); 
+    it("36", () => {
+        chai.expect(subject.convert(36)).to.equal("XXXVI");
+    }); 
+    it("39", () => {
+        chai.expect(subject.convert(39)).to.equal("XXXIX");
+    }); 
 });
