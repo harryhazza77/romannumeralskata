@@ -4,7 +4,7 @@ My solution to a roman numerals coding kata (https://github.com/boucardbruno/Rom
 
 ## Getting Started
 
-clone this repo
-install yarn
-run yarn
-run gulp
+- clone this repo
+- install yarn
+- run yarn
+- run gulp
