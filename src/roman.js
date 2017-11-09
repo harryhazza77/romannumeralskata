@@ -15,6 +15,7 @@ const getAtom = function(number) {
 }
 
 module.exports.convert = function(number) {
+    if (number < 1 || number % 1 > 0) return "integer greater than zero required";
     const wholeTens = Math.floor(number/10);
     const atom = getAtom(number);
     if (atom && wholeTens !== 4 && wholeTens !== 9) return atom;
